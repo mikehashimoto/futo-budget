@@ -1,1 +1,3 @@
-import './css/main.css';
+import './css/tailwind.css';
+
+require('./component/hello.js');
