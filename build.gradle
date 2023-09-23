@@ -1,5 +1,6 @@
 buildscript {
 	dependencies {
+		classpath group: "com.github.node-gradle", name: "gradle-node-plugin", version: "7.0.0"
 		classpath group: "org.springframework.boot", name: "spring-boot-gradle-plugin", version: "3.1.4"
 	}
 
@@ -9,6 +10,7 @@ buildscript {
 }
 
 plugins {
+	id "com.github.node-gradle.node" version "7.0.0"
 	id "java"
 	id "org.springframework.boot" version "3.1.4"
 }
@@ -20,4 +22,8 @@ dependencies {
 
 repositories {
 	mavenCentral()
+}
+
+compileJava {
+	dependsOn = ["npm_run_build"]
 }
