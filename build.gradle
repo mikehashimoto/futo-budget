@@ -14,6 +14,7 @@ plugins {
 }
 
 dependencies {
+	implementation group: "org.springframework.boot", name: "spring-boot-starter-thymeleaf", version: "3.1.4"
 	implementation group: "org.springframework.boot", name: "spring-boot-starter-web", version: "3.1.4"
 }
 
