@@ -4,10 +4,6 @@ import {BaseLitElement} from './base-lit-element.js';
 
 @customElement('hello-element')
 class HelloElement extends BaseLitElement {
-	createRenderRoot() {
-		return this;
-	}
-
 	render() {
 		return html`
 			<div>Hello from MyElement!</div>
