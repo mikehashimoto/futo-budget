@@ -14,4 +14,9 @@ public class FutoRestController {
 		return "index";
 	}
 
+	@RequestMapping(value = "/clicked")
+	public String clicked() {
+		return "component/clicked";
+	}
+
 }
