@@ -3,5 +3,9 @@
 	"plugins": [
 		["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }],
 		"@babel/plugin-proposal-class-properties"
-	]
+	],
+	"targets": {
+		"browsers": "last 2 versions, not dead, not IE 11",
+		"esmodules": true
+	}
 }
